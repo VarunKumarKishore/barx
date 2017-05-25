@@ -1,0 +1,39 @@
+.gu12 .row {
+  width: 816px;
+}
+
+.gu12 {
+  width: 792px;
+}
+
+dl, menu, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+.col {
+  padding-left: 24px;
+  float: left;
+  position: relative;
+}
+.bc_main {
+  position: relative;
+}
+
+.staticpage {
+  min-height: 550px;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 11px;
+  letter-spacing: 0em;
+  line-height: 1.37em;
+  color: #666666;
+}
+
+h1, .h1, .subnav h1 a nav div {
+  font-family: ExpertSans-Light;
+  font-size: 48px !important;
+  letter-spacing: -0.04em;
+  color: #00395c;
+}

@@ -1,0 +1,205 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" style="    padding-left: 66px;
+">
+      <!--<a class="navbar-brand" href="#">BARX Comet</a>-->
+
+      <a href="/" title="Barclays logo" target="_self">
+
+        <img style="padding-top: 12px;
+    padding-right: 18px;" src="https://www.home.barclays/content/dam/barclayspublic/images/Site%20wide/Barclays%20logo/barclays-logo-desktop.png" data-interchange="[/content/dam/barclayspublic/images/Site wide/Barclays logo/barclays-logo-tab-mobile.png, (default)],
+                [/content/dam/barclayspublic/images/Site wide/Barclays logo/barclays-logo-tab-mobile.png, (medium)],
+                [/content/dam/barclayspublic/images/Site wide/Barclays logo/barclays-logo-desktop.png, (large)]" alt="Barclays logo" title="Barclays logo" data-uuid="34647cff-79e1-e651-a645-f8e045a81ee4">
+
+      </a>
+
+    </div>
+    <span style='
+    font-family: "Expert-Sans-Bold","Helvetica",Helvetica,Arial,sans-serif;
+    color: #7fd6f7;
+    font-size: 35px;
+    padding-right: 24px;
+    padding-top: 5px;
+    float: left;'>
+        BARX Comet</span>
+    <ul class="nav navbar-nav" style="padding-top: 13px">
+      <li (click)='selectComponentType($event)'>
+        <button class="btn" [class.btn-primary]="classPricingActive" style="height: 33px">Pricer</button>
+
+        <br/>
+      </li>
+      <li (click)='selectComponentType($event)'>
+        <button class="btn" [class.btn-primary]="classMultiPricingActive" style="height: 33px">MultiPricer</button>
+        <br/>
+      </li>
+      <li>
+
+       <div class="form-group">
+          <select class="form-control" (change)='selectComponentType($event)' [(ngModel)]="selectedValue" id="selectDropdown">
+            <option *ngFor="let category of categories" [ngValue]=category.name>{{category.name}}</option>
+          </select>
+         </div>
+     </li>
+    </ul>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+<!--
+<div class="bc_main">
+  <div class="backdrop"></div>
+  <div class="staticpage">
+    <div class="row">
+      <div class="col gu12">
+        <h1>About Comet</h1><h2>Global Coverage</h2>
+        <ul class="default">
+          <li>A single global platform tailored to meet your needs
+          </li>
+          <li>A dedicated global sales and support team
+          </li>
+        </ul>
+        <h2>Price discovery</h2>
+        <ul class="default">
+          <li>Pricing access to over 1,000 underlyings available across major global markets
+          </li>
+          <li>Create a bespoke product solution for your client with full flexibility to configure the terms of the product
+          </li>
+          <li>Select any combination of underlying assets and solve for required parameters
+          </li>
+        </ul>
+        <h2>Real-time execution</h2>
+        <ul class="default">
+          <li>Instant access to daily market liquidity on global markets including live Bid/Ask pricing for secondary
+            market products
+          </li>
+          <li>Easy to use click-and-trade functionality
+          </li>
+        </ul>
+        <h2>Intergrated offering</h2>
+        <ul class="default">
+          <li>Benefit from full integration with the BARX Investor Solutions platform which delivers complete lifecycle
+            management
+          </li>
+          <li>Direct access to trade, quote details and termsheet via an online blotter with the ability to customise
+            your view
+          </li>
+        </ul>
+        <p class="pdf">
+          <a href="/contentStore.app?id=4463633" target="_blank">View BARX Comet online brochure
+          </a>
+        </p>
+
+        <h2>For more information please contact us at:</h2>
+        <div class="forward"><a href="mailto:barxissaleseurope@barclays.com?Subject=BARX Comet Online Enquiry">barxissaleseurope@barclays.com</a>
+        </div>
+        &nbsp;</div>
+      <div class="col gu6">
+        <div class="box">
+          <h2>
+            Contact Us</h2>
+          <div class="description">
+            <h3>
+              BARX Client Services - EMEA</h3>
+            <p>If you require assistance please email <a href="mailto:barxissaleseurope@barclays.com">barxissaleseurope@barclays.com</a> or phone:</p>
+          </div>
+          <h1>
+            +44 (0) 20 7773 2375</h1>
+          <div class="forward">
+            <a href="/CH/2/en/static/contactus.app">More Contacts</a>
+          </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col gu18">
+        <div class="ul_line"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col gu12">
+        <ul class="nav">
+          <li><a href="/CH/2/en/static/contactus.app">Contact Us</a></li>
+          <li><a href="/CH/2/en/static/aboutus.app">About Us</a></li>
+          <li><a href="/CH/2/en/static/disclaimer.app">Disclaimer</a></li>
+          <li><a href="/CH/2/en/static/privacy.app">Privacy &amp; Cookies</a></li>
+          <li><a href="/CH/2/en/static/accessibility.app">Accessibility<style>.search_items input[type="text"]{margin-top:8px!important}.search_items .search_button{margin-top:8px}.header .links_info > *, .search_items > *{vertical-align:top}</style></a></li>
+        </ul>
+      </div>
+      <div class="col gu6">
+        <div class="copyright">© Barclays Bank PLC 2017</div>
+      </div>
+    </div><div class="row">
+    <div class="col gu18">
+      <div class="ul_line"></div>
+    </div>
+  </div>
+    <div class="row twenty_margin">
+      <div class="col gui4">
+        <h2>Other Barclays sites</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col gu3">
+        <ul class="list first">
+          <li><a href="http://live.barclays.com" target="_blank">Barclays Live</a></li>
+        </ul>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu3">
+        <ul class="list second">
+          <li><a href="http://ecommerce.barcap.com/indices/index.dxml" target="_blank">Barclays Indices</a></li>
+        </ul>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu3">
+        <ul class="list third">
+          <li><a href="http://www.barx.com" target="_blank">BARX Electronic Trading</a></li>
+        </ul>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu4">
+        <ul class="list fourth">
+          <li><a href="http://www.barclays.com" target="_blank">Barclays</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row fifteen_margin">
+      <div class="col gu3">
+        <a href="http://live.barclays.com" target="_blank"><div class="branding first"></div></a>
+        <div class="fifteen_margin">Get online access to award winning global research, publications and analytical tools with Barclays Live.</div>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu3">
+        <a href="http://ecommerce.barcap.com/indices/index.dxml" target="_blank"><div class="branding second"></div></a>
+        <div class="fifteen_margin">The Barclays Indices platform offers market leading benchmarks and alpha generating index products to meet the diverse needs of global investors.</div>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu3">
+        <a href="http://www.barx.com" target="_blank"><div class="branding third"></div></a>
+        <div class="fifteen_margin">BARX combines unparalleled liquidity from Barclays across multiple asset classes with innovative trading tools and a dedicated 24 hour service.</div>
+      </div>
+      <div class="col gu1">&nbsp;</div>
+      <div class="col gu3">
+        <a href="http://www.barclays.com" target="_blank"><div class="branding fourth"></div></a>
+        <div class="fifteen_margin">Access the latest Barclays reports, product prospectuses. View the latest news from Barclays and information about the Barclays Group.</div>
+      </div>
+    </div>
+    <div class="row fifteen_margin">
+      <div class="col gu18">
+        <div class="crosslink_info">
+          <a href="http://www.bmarkets.com"><div class="crosslink_logo crosslink_logo_INVSOL"></div></a>
+          <div class="crosslink_question"><a href="http://www.bmarkets.com">Are you a Bmarkets Private Investor?</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row fifteen_margin">
+      <div class="col gu18">
+        <div class="ul_line"></div>
+      </div>
+    </div></div>
+</div>-->
+
+
+

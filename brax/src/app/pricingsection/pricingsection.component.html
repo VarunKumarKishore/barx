@@ -1,0 +1,55 @@
+<div class="panel panel-default panel-open">
+  <button class="btn" (click)="displaySection1 = !displaySection1" [class.btn-primary]="displaySection1">
+   <!-- <button (click)="displaySection1 = !displaySection1">jd
+    </button>-->Section 1
+  </button>
+  &nbsp;
+  <br>
+
+  <div *ngIf="displaySection1" class="panel-title">
+    <br>
+   <!-- <app-pricingsection-box1></app-pricingsection-box1>-->
+    <app-product-template-builder [ruleArray1]="ruleArray1" [showLabel]="showLabel"></app-product-template-builder>
+  </div>
+</div>
+
+<div class="panel panel-default panel-open">
+  <button class="btn" (click)="displaySection2 = !displaySection2" [class.btn-primary]="displaySection2">  Section 2
+  <!--<button (click)="displaySection2 = !displaySection2">
+    Section 2
+  </button>-->
+  </button>
+  <div *ngIf="displaySection2">
+    <!--<app-pricingsection-box2></app-pricingsection-box2>-->
+    <br>
+    <app-product-template-builder [ruleArray1]="ruleArray2"></app-product-template-builder>
+  </div>
+</div>
+
+<div class="panel panel-default panel-open">
+  <button class="btn" (click)="displaySection3 = !displaySection3" [class.btn-primary]="displaySection3">  Section 3
+  <!--<button (click)="displaySection3 = !displaySection3">
+    Section 3
+  </button>-->
+  </button>
+
+  <div *ngIf="displaySection3">
+   <!-- <app-pricingsection-box3></app-pricingsection-box3>-->
+    <br>
+    <app-product-template-builder [ruleArray1]="ruleArray3"></app-product-template-builder>
+  </div>
+</div>
+
+<div class="panel panel-default panel-open">
+  <button class="btn" (click)="displaySection4 = !displaySection4" [class.btn-primary]="displaySection4">  Section 4
+    <!--<button (click)="displaySection4 = !displaySection4">
+      Section 4
+    </button>-->
+  </button>
+
+  <div *ngIf="displaySection4">
+    <!-- <app-pricingsection-box3></app-pricingsection-box3>-->
+    <br>
+    <app-product-template-builder [ruleArray1]="ruleArray4"></app-product-template-builder>
+  </div>
+</div>

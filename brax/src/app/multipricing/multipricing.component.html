@@ -1,0 +1,18 @@
+
+<div class="col-xs-3" *ngFor="let id of createRange(maxCount); let i=index" style="padding-left: 70px;">
+  <div *ngIf="i<initialMaxCount" style="float:right">
+    &nbsp;
+    <button type="submit" class="btn btn-primary" (click)="addPricingItem()" *ngIf="i==maxCount-1">Add</button>
+  </div>
+  <button *ngIf="1 != count.length" type="submit" class="btn btn-primary" (click)="removePricingItem(i)" style="
+    float:right">Remove</button>
+
+  <div *ngIf="i==0">
+    <app-pricingsection [componentType]="componentType" [showLabel]="true"></app-pricingsection>
+  </div>
+  <div *ngIf="i!=0">
+    <app-pricingsection [componentType]="componentType" [showLabel]="true"></app-pricingsection>
+  </div>
+</div>
+
+

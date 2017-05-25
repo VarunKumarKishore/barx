@@ -1,0 +1,132 @@
+{
+  "equiteeProduct" : [
+    {
+      "componentName": "Order Type",
+      "componentType": "text",
+      "row": "1",
+      "column": "3",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Market",
+      "componentType": "text",
+      "row": "2",
+      "column": "1",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Underlying",
+      "componentType": "text",
+      "row": "3",
+      "column": "1",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Settlement Method",
+      "componentType": "text",
+      "row": "3",
+      "column": "1",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Currency",
+      "componentType": "text",
+      "row": "3",
+      "column": "2",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "National",
+      "componentType": "text",
+      "row": "1",
+      "column": "2",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Knock in type",
+      "componentType": "text",
+      "row": "2",
+      "column": "2",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Tenor",
+      "componentType": "text",
+      "row": "3",
+      "column": "2",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Listing Venue",
+      "componentType": "text",
+      "row": "3",
+      "column": "2",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Coupon Type",
+      "componentType": "text",
+      "row": "3",
+      "column": "3",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },{
+      "componentName": "Coupon/Autocall freq",
+      "componentType": "text",
+      "row": "3",
+      "column": "3",
+      "productType":"Autocallable"
+    },{
+      "componentName": "Autocall barrier",
+      "componentType": "text",
+      "row": "3",
+      "column": "3",
+      "productType":"Autocallable"
+    },{
+      "componentName": "Autocall deferral",
+      "componentType": "text",
+      "row": "3",
+      "column": "3",
+      "productType":"Autocallable"
+    },{
+      "componentName": "Form of security",
+      "componentType": "text",
+      "row": "3",
+      "column": "3",
+      "productType":"Autocallable"
+    },
+    {
+      "componentName": "Strike date",
+      "componentType": "date",
+      "row": "1",
+      "column": "4",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Issue date",
+      "componentType": "date",
+      "row": "2",
+      "column": "4",
+      "productType":"WorstOfReverseConvertible, Autocallable"
+    },
+    {
+      "componentName": "Fee payment date",
+      "componentType": "date",
+      "row": "3",
+      "column": "4",
+      "productType":"Autocallable"
+    },
+    {
+      "componentName": "Redemption date",
+      "componentType": "date",
+      "row": "3",
+      "column": "4",
+      "productType":"Autocallable"
+    },
+    {
+      "componentName": "Final fixing date",
+      "componentType": "date",
+      "row": "3",
+      "column": "4",
+      "productType":"Autocallable"
+    }]
+}
